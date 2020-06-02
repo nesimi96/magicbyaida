@@ -1,0 +1,70 @@
+.TextHolderOne {
+    grid-column: 5 / 12;
+    grid-row: 7 / 15;
+    
+    background-color: rgb(255, 255, 255);
+    padding: 3rem;
+    z-index: 200;
+
+    @media only screen and (max-width: 1250px) {
+        grid-column: 2 / 10;
+        padding: 2rem;
+    }
+
+    @media only screen and (max-width: 1100px) {
+        grid-row: 6 / 15;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        grid-row: 6 / 15;
+        grid-column: 2 / 11;
+    }
+
+    @media only screen and (max-width: 900px) {
+        grid-row: 4 / 14;
+        grid-column: 2 / 11; 
+    }
+
+    @media only screen and (max-width: 750px) {
+        grid-row: 2 / 12;
+    }
+
+    @media only screen and (max-width: 700px) {
+        order: -3;
+        padding: 0 2rem;
+        margin-top: -3rem;
+        z-index: 50;
+    } 
+
+    @media only screen and (max-width: 450px) {
+        padding: 0 1.3rem;
+     }
+
+
+
+    & p {
+        font-size: 1rem;
+        line-height: 1.55;
+        font-family: 'Zilla Slab', serif;
+        color: rgb(73, 72, 72);
+
+        @media only screen and (max-width: 700px) {
+            
+        }
+    }
+   
+}
+
+
+@keyframes textOne {
+
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

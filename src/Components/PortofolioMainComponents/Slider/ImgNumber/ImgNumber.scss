@@ -1,0 +1,27 @@
+.ImgNumber {
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    //background-color: rgb(87, 65, 65);
+    height: 2rem;
+
+    display: flex;
+
+    @media only screen and (max-width: 600px) {
+        left: 87%;
+    }
+
+    @media only screen and (max-width: 400px) {
+        left: 83%;
+    }
+
+
+    & div {
+
+        font-size: 1.4rem;
+        color: white;
+        margin-right: .25rem;
+        font-family: 'Zilla Slab', 'sans-serif';
+    }
+}
+

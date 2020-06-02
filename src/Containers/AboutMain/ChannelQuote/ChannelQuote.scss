@@ -1,0 +1,78 @@
+.ChannelQuote {
+    grid-column: 7 / 13;
+    grid-row: 5 / 6;
+    background-color: transparent;
+    z-index: 200;
+
+    @media only screen and (max-width: 1250px) {
+        grid-column: 8 / 14;
+        grid-row: 5 / 6;
+    }
+
+    @media only screen and (max-width: 1100px) {
+        grid-row: 3 / 4;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        grid-column: 12 / 20;   
+    }
+
+    @media only screen and (max-width: 900px) {
+        grid-column: 7 / 17;   
+    }
+
+    @media only screen and (max-width: 750px) {
+        grid-column: 12 / 20;
+    }
+
+    @media only screen and (max-width: 700px) {
+        order: -4;
+        left: 8%;
+        margin-top: 4.5rem;
+        margin-left: 10%;
+        width: 13rem;
+        background-color: rgb(255, 255, 255);
+        z-index: 0;
+    }
+
+    & p {
+        font-family: 'Lobster', ;
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    & h6 {
+        font-family: 'Zilla Slab', serif;
+        font-size: 1.2rem;
+        transform: translateY(-2.3rem);
+    }
+
+}
+
+
+@keyframes para {
+
+    0% {
+        opacity: 0;
+        transform: translateX(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes head {
+
+    0% {
+        opacity: 0;
+        transform: translateY(2.6rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-2.3rem);
+    }
+}

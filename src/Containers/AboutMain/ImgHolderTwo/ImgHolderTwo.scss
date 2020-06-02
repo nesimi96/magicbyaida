@@ -1,0 +1,60 @@
+.ImgHolderTwo {
+    grid-column: 12 / -1;
+    grid-row: 6 / 12;
+    position: relative;
+    //background-color: rgb(150, 72, 72);
+    overflow: hidden;
+     
+    &-cover {
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transition: all .5s ease-in-out;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media only screen and (max-width: 1250px) {
+        grid-column: 11 / 20;
+    }
+
+    @media only screen and (max-width: 900px) {
+        grid-column: 11 / -1;   
+    }
+
+    @media only screen and (max-width: 700px) {
+       order: -2;
+    }
+    
+  
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+
+@keyframes imgTwo {
+    
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+        @media only screen and (max-width: 700px) {
+            opacity: 1;
+            transform: translateY(0rem);  
+         }
+     }
+
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+       @media only screen and (max-width: 700px) {
+        opacity: 1;
+        transform: translateY(0rem);  
+     }
+    }
+}

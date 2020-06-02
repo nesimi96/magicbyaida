@@ -1,0 +1,58 @@
+.MainWrapper {
+    position: relative;
+    height: 50%;
+    left: 48%;
+    width: 41%;
+    background-color: transparent;
+    transition: all .7s cubic-bezier(.66,0,.49,.03);
+    transform: translate(-30%, -50%);
+    overflow: hidden;
+
+    @media only screen and (max-width: 900px) {
+        width: 65%;
+        left: 40%;
+       }
+
+}
+
+.ImgHolder {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+   
+    & img {
+        transition: all 4s linear;
+        width: 100%;
+        height: 100%;
+        filter: brightness(.5);
+    }
+
+    &-backdrop {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        //width: 100%;
+        height: 100%;
+        background-color: rgb(235, 189, 91);
+        z-index: 100;
+        transition: all .5s ease-in-out;
+    }
+}
+
+@keyframes holderAnime {
+
+    0% {
+        transform: translateY(10rem);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

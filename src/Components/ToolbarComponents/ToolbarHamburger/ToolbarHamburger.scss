@@ -1,0 +1,42 @@
+.ToolbarHamburger {
+    align-self: center;
+    justify-self: start;
+   // background-color: rgb(173, 166, 166);
+    height: 90%;
+    width: 13%;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    @media only screen and (min-width: 600px) {
+       display: none;
+    }
+
+    @media only screen and (max-width: 500px) {
+        position: relative;
+        left: 2%;
+    }
+
+    &-line {
+        width: 2rem;
+        height: 2px;
+        background-color: rgb(56, 55, 55);
+       
+
+        &-1 {
+            transform: translateY(.5rem);
+         }
+
+        &-2 {
+            transform: translateY(0px);
+        }
+
+        &-3 {
+            transform: translateY(-.5rem);
+        }
+
+    }
+
+    
+}

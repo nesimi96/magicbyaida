@@ -1,0 +1,63 @@
+.Hamburger {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 10rem;
+    background-color: transparent;
+    padding-top: 1rem;
+    cursor: pointer;
+    //z-index: 200;
+
+    display: grid;
+    justify-content: center;
+    align-content: start;
+
+
+    @media (max-width: 800px) { 
+        top: 2rem;
+        left: 2rem;
+    }
+
+    &:hover &-open {
+        background-color: rgb(252, 224, 188);
+
+        &-1 {
+            transform: translateY(-2px);
+        }
+
+        &-3 {
+            transform: translateY(1.1rem);
+        }
+
+    }
+
+
+    &-open {
+        background-color: #f7f7f7;
+        height: 3px;
+        transition: all .3s ease-in;
+        z-index: 100;
+
+        &-1{
+          width: 2.8rem;
+          height: 3px;
+        }
+
+        &-2{
+            height: 3px;
+            width: 1.65rem;
+            transform: translateY(.45rem);
+        }
+        
+
+        &-3{ 
+            height: 3px;
+            width: .8rem;
+            transform: translateY(.9rem);
+        }
+    
+    }
+}
+

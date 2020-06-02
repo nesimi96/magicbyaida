@@ -1,0 +1,17 @@
+.Button {
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid black;
+    transition: all .25s ease-in-out;
+    
+    &:hover {
+        background-color: rgb(15, 15, 15);
+        color: white;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

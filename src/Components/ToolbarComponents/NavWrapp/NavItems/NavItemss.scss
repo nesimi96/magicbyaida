@@ -1,0 +1,14 @@
+.NavItemss {
+    margin-right: 1rem;
+    color: black;
+    font-family: 'Poppins', ;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .25s ease-in;
+    font-size: .85rem;
+
+    &:hover {
+        color: salmon;
+    }
+
+}

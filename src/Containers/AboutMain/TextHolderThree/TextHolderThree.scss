@@ -1,0 +1,47 @@
+.TextHolderThree {
+      grid-column: 4 / 9;
+      grid-row: 16 / 20;
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 5px;
+      z-index: 200;
+      background-color: rgb(255, 255, 255);
+      padding: 1rem;
+
+      @media only screen and (max-width: 1250px) {
+        grid-column: 2 / 9;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        grid-column: 2 / 11;  
+    }
+
+    @media only screen and (max-width: 750px) {
+        grid-column: 1 / 12; 
+        transform: translateX(-.2rem)
+    }
+
+    @media only screen and (max-width: 700px) {
+       order: -1;
+       padding: 0 2rem;
+       transform: translateY(1rem);
+       margin-bottom: 2rem;
+    }
+
+    @media only screen and (max-width: 450px) {
+        padding: 0 1.3rem;
+     }
+
+      & p {
+        font-size: 1rem;
+        line-height: 1.55;
+        font-family: 'Zilla Slab', serif;
+        color: rgb(14, 13, 13);
+
+    }
+
+    & h6 {
+        font-family: 'Zilla Slab', serif;
+        font-size: 1rem;   
+        transform: translateY(-1.3rem);
+    }
+}

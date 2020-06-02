@@ -1,0 +1,13 @@
+.NavItems {
+    z-index: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    height: 25%;
+    width: max-content;
+    //background-color: rgb(87, 54, 54);
+
+    display: grid;
+    align-items: center;
+}

@@ -1,0 +1,39 @@
+.NavItem {
+    color: rgb(131, 93, 93);
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+    transition: all .25s ease-in-out;
+
+    @media (max-width: 1200px) { 
+        font-size: 1.8rem;
+    }
+
+    @media (max-width: 600px) { 
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        transform: translateX(1rem);
+    }
+}
+
+@keyframes itemAnime {
+
+    0% {
+        transform: translateX(-10.5rem);
+        opacity: 0;
+     }
+    
+
+     30% {
+       opacity: 0;
+     }
+
+
+    100% {
+       transform: translateX(0);
+       opacity: 1;
+    }
+}
+

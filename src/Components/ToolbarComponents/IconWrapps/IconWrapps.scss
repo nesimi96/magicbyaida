@@ -1,0 +1,26 @@
+.IconWrapps {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    height: max-content;
+    //background-color: rgb(121, 67, 67);
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    @media only screen and (max-width: 600px) {
+        right: .5%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        right: -.10%;
+    }
+
+    @media only screen and (max-width: 400px) {
+        right: -1rem;
+    }
+
+}

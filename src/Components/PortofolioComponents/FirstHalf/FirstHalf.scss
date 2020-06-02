@@ -1,0 +1,42 @@
+.FirstHalf {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50%;
+    background-color: rgb(32, 34, 36);
+    transition: all 1s ease-in-out;
+
+    & h4 {
+        position: relative;
+        font-size: 1.6rem;
+        letter-spacing: 4px;
+        font-family: 'Source Sans Pro', sans-serif;
+        top: 105%;
+        left: -35%;
+        transform: rotate(-89deg);
+
+        @media only screen and (max-width: 900px) {
+            top: 107%;
+            left: -45%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            font-size: 1.4rem;
+            letter-spacing: 1.5px;
+           }
+
+           @media only screen and (max-width: 450px) {
+            top: 109%;
+        }
+
+    }
+}
+
+.span {
+    color: #fff;
+    font-size: 1.5rem;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 1.3rem;
+       }
+}

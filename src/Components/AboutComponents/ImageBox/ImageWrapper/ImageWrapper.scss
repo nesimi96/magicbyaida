@@ -1,0 +1,48 @@
+.ImageWrapper {
+    position: relative;
+    width: 29rem;
+    height: 31rem;
+    top: 20%;
+    right: 8%;
+
+    @media only screen and (max-width: 1300px) {
+        right: 3%;
+      }
+
+      @media only screen and (max-width: 1150px) {
+        width: 28rem;
+        height: 26rem;
+    }
+
+    
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &-cover {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        height: 100%;
+        background-color: #25272e;
+        transition: all .455s ease-in-out;
+    }
+}
+
+@keyframes imageWrapper {
+
+    0% {
+        transform: translateX(-15rem);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

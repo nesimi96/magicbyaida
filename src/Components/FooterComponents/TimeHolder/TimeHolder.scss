@@ -1,0 +1,59 @@
+.TimeHolder {
+   // background-color: rgb(50, 59, 50);
+    grid-column: 2 / 4;
+    grid-row: 3 / 8;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+
+    @media only screen and (max-width: 1200px) {
+        grid-column: 2 / 5;
+    }
+
+    @media only screen and (max-width: 800px) {
+        grid-column: 1 / 5;
+    }
+
+
+    @media only screen and (max-width: 650px) {
+        grid-column: 1 / 9;
+        grid-row: 6 / 9;
+        align-items: start;
+    }
+
+    & p {
+        color: rgb(243, 235, 235);
+        font-family: 'Source Sans Pro', 'sans-serif';
+        font-size: .9rem;
+        margin-left: 12%;
+
+        @media only screen and (max-width: 450px) {
+            margin-left: 5%;
+         }
+    }
+
+    & span {
+        color: rgb(121, 160, 121);
+        margin-left: .5rem;
+        font-size: .95rem;
+
+        &:hover {
+            color: rgb(121, 160, 121);
+            cursor: auto;
+        }
+    }
+}
+
+@keyframes timeHolderAnim {
+    0% {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+

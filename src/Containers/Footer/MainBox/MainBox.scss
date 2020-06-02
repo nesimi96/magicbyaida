@@ -1,0 +1,56 @@
+.MainBox {
+    background-color: rgb(48, 45, 45);
+    position: relative;
+    top: 0;
+    right: -10%;
+    width: 88%;
+    border-radius: 1px;
+    transition: all 1s ease-in-out;
+    
+    height: 110%;
+    transform: translateY(-5rem);
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+
+    & h6{
+        color: white;
+        position: absolute;
+        bottom: -3.2rem;
+        font-family: 'Montserrat', 'sans-serif';
+        font-weight: 300;
+    }
+
+    & span {
+        font-size: .75rem;
+        margin-left: .2rem;
+        cursor: pointer;
+        transition: all .15s ease-in-out;
+        color: salmon;
+        &:hover {
+            color: salmon;
+            transform: translateY(1rem);
+        }
+
+    }
+}
+
+.Icons {
+    fill: rgb(221, 216, 216);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+@keyframes mainBoxAnim {
+    
+    0% {
+        width: 0%;
+    }
+    
+    100% {
+        width: 88%
+    }
+}

@@ -1,0 +1,64 @@
+.HeadersWrapper {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    &-1 {
+        grid-column: 1 / 21;
+        grid-row:  1 / 8;
+
+        @media only screen and (max-width: 600px) {
+            grid-column: 1 / 17;
+        }
+    }
+
+    &-2 {
+        grid-column: 25 / -1;
+        grid-row:  9 / 15;
+        transform: rotate(90deg);
+        @media only screen and (max-width: 600px) {
+           display: none;
+        }
+    }
+
+    &-3 {
+        grid-column: 25 / -1;
+        grid-row:  15 / 21;
+        transform: rotate(90deg);
+        @media only screen and (max-width: 600px) {
+            display: none;
+         }
+    }
+
+    &-4 {
+        grid-column: 1 / 12;
+        grid-row:  21 / 29;
+        transform: rotate(90deg);
+        @media only screen and (max-width: 600px) {
+            display: none;
+         }
+    }
+
+& h2 {
+   
+    font-family: 'Lobster', ;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+
+
+    @media only screen and (max-width: 1000px) {
+        font-size: 1.3rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+        font-size: 1.1rem;
+        letter-spacing: 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        font-size: .9rem;
+        letter-spacing: 0px;
+    }
+}
+}

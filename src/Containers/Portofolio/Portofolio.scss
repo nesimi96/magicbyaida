@@ -1,0 +1,19 @@
+.Portofolio {
+    width: 100%;
+    height: 900px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+
+    @media only screen and (max-width: 900px) {
+        height: 700px;
+       }
+
+       @media only screen and (max-width: 600px) {
+        height: 500px;
+       }
+
+
+       @media only screen and (max-width: 450px) {
+        height: 400px;
+    }
+}

@@ -1,0 +1,45 @@
+.CloseSlider {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 2px solid salmon;
+    border-radius: 50%;
+    z-index: 3000;
+    cursor: pointer;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+
+    @media only screen and (max-width: 600px) {
+        left: 1.5rem;
+    }
+
+
+    &:hover .line{
+        transform: rotate(90deg);
+    }
+
+    &:hover .line-1{
+        transform: rotate(180deg);
+    }
+
+}
+
+.line {
+    position: absolute;
+    background-color: white;
+    width: 1.7rem;
+    height: 2px;
+    transition: all .2s ease-in-out;
+    transform: rotate(-50deg);
+
+    &-1 {
+        transform: rotate(50deg);
+    }
+
+}

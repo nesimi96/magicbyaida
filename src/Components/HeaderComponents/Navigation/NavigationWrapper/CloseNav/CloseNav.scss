@@ -1,0 +1,44 @@
+.CloseNav {
+    width: 4.2rem;
+    height: 4.2rem;
+    //background-color: rgb(226, 204, 204);
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        //top: rem;
+        width: 1.5rem;
+        height: 1.4px;
+        background-color: black;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+
+@keyframes closeNavAnime {
+
+    0% {
+        transform: translateY(-6.5rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+

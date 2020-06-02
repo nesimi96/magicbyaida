@@ -1,0 +1,23 @@
+.ArrowDown {
+    fill: rgb(255, 255, 255);
+    height: 2.8rem;
+    width: 2.5rem;
+    animation: arrow 1s ease-in infinite;
+}
+
+@keyframes arrow {
+
+    0%{
+        opacity: 1;
+     }
+   
+     50% {
+         transform: scale(1.1);
+         opacity: .85;
+     }
+
+    100%{
+      
+       opacity: 1;
+    }
+}

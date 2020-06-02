@@ -1,0 +1,46 @@
+.FooterNav {
+   // background-color: rgb(88, 62, 36);
+    display: flex;
+    grid-column: 9 / -1;
+    grid-row: 12 / -1;
+
+
+    @media only screen and (max-width: 800px) {
+        grid-column: 7 / -1;
+    }
+
+    @media only screen and (max-width: 650px) {
+       grid-column: 4 / -1;
+    }
+
+    @media only screen and (max-width: 400px) {
+        grid-column: 2 / -1;
+     }
+
+
+    &-items {
+        color: #fff;
+        margin-right: 1rem;
+        font-family: 'Source Sans Pro', 'sans-serif';
+        cursor: pointer;
+        font-size: .9rem;
+
+        &:hover {
+            color: salmon;
+        }
+    }
+}
+
+@keyframes footerNavAnim {
+    
+    0% {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+

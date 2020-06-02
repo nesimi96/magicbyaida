@@ -1,0 +1,17 @@
+.ImgStyle {
+        background-color: black;
+        align-self: end;
+}
+
+@keyframes imgStyle {
+
+    0% {
+        height: 100%;
+        background-color: rgba(196, 196, 196, .9);
+    }
+
+    100% {
+        height: 0%;
+        background-color: rgba(196, 196, 196, .1);
+    }
+}

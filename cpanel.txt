@@ -1,0 +1,13 @@
+Username: u4195725
+Password: Hqa_Z2PNSV
+Control Panel URL: http://aviahosting.net/cpanel
+
+Server Informacije
+
+Ime servera: Server 1
+Server IP: 95.216.37.97
+
+Ukoliko koristite veæ postojeæu domenu uz vaš novi hosting raèun, potrebno je da izmjenite podešavanja domena i usmjerite Nameservere na sledeæe:
+
+Nameserver 1: ns1.aviahosting.net
+Nameserver 2: ns2.aviahosting.net

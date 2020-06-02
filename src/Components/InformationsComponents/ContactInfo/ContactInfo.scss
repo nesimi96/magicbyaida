@@ -1,0 +1,52 @@
+.ContactInfo {
+    background-color: #2f2f2f;
+    grid-column: 2 / 9;
+    grid-row: 5 / 17;
+    z-index: 50;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    @media only screen and (max-width: 700px) {
+        transform: translateY(3rem);
+    }
+
+    @media only screen and (max-width: 700px) {
+        justify-content: start;
+        padding-left: 2rem;
+    }
+
+    & h1 {
+        color: rgb(204, 204, 204);
+        font-family: 'Poppins', ;
+        font-size: 1.2rem;
+        font-weight: 400;
+        transform: translateY(-2.5rem);
+
+        @media only screen and (max-width: 700px) {
+            transform: translateY(0);
+        }
+
+        @media only screen and (max-width: 450px) {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media only screen and (max-width: 1150px) {
+        grid-column: 1 / 9;
+    }
+
+    @media only screen and (max-width: 900px) {
+        grid-column: 1 / 10;
+    }
+
+    @media only screen and (max-width: 800px) {
+        grid-column: 1 / 12;
+    }
+
+    @media only screen and (max-width: 700px) {
+        grid-column: 1 / -1;
+        grid-row: 19 / 20;
+    }
+}

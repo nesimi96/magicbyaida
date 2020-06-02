@@ -1,0 +1,13 @@
+.Informations {
+    position: relative;
+    top: 3.2rem;
+    left: 0%;
+    height: 550px;
+    width: 100%;
+    //background-color: rgb(48, 31, 31);
+
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, calc(550px - 20));
+
+}
